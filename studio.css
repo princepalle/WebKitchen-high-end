@@ -67,6 +67,22 @@ p { margin: 0 0 1em; }
 .case ul { list-style: none; padding: 0; margin: 0 0 28px; border-top: 1px solid rgba(0,0,0,.12); }
 .case li { padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.12); color: #3b362f; }
 
+.styles { padding: 0 0 120px; }
+.style-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.style-card { display: flex; flex-direction: column; text-decoration: none; background: #fff; border-radius: 22px; padding: 14px 14px 26px; transition: transform .5s var(--ease), box-shadow .5s var(--ease); }
+.style-card:hover { transform: translateY(-6px); box-shadow: 0 30px 60px -30px rgba(0,0,0,.35); }
+.style-card h3 { font-size: 2.2rem; margin: 22px 12px 6px; }
+.style-card p { margin: 0 12px 18px; color: var(--muted); flex: 1; }
+.style-card .link { margin: 0 12px; align-self: flex-start; }
+.sw { display: grid; place-items: center; aspect-ratio: 4 / 3; border-radius: 14px; text-align: center; padding: 20px; }
+.sw i { font-style: normal; font-size: 1.7rem; line-height: 1.1; }
+.sw-noc { background: radial-gradient(80% 80% at 70% 40%, rgba(232,120,40,.35), transparent 60%), #14110e; color: #f3ede3; font-family: "Cormorant Garamond", Georgia, serif; }
+.sw-noc i { font-family: inherit; font-size: 2rem; }
+.sw-noc em { color: #e2c27a; }
+.sw-bright { background: radial-gradient(60% 60% at 80% 20%, #fdecd2, transparent 70%), #fff8ee; color: #1b1530; font-family: "Poppins", sans-serif; font-weight: 700; }
+.sw-bright b { color: #f08a2c; border: 2px solid #f08a2c; border-radius: 50%; padding: 0 .3em; }
+.sw-bold { background: radial-gradient(60% 60% at 70% 60%, rgba(255,122,26,.4), transparent 65%), #0c0b0a; color: #f5f1ea; font-family: "Sora", sans-serif; font-weight: 800; }
+.sw-bold b { color: #ff7a1a; text-decoration: underline; text-underline-offset: 6px; }
 .services { background: var(--ink); color: var(--paper); padding: 120px 0; }
 .services .eyebrow { color: #a49b8e; }
 .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid rgba(255,255,255,.14); }
@@ -123,7 +139,7 @@ p { margin: 0 0 1em; }
   .svc:nth-child(odd) { border-right: 1px solid rgba(255,255,255,.14) !important; }
   .svc:nth-child(even) { padding-left: 22px; }
   .steps { grid-template-columns: 1fr 1fr; }
-  .pk-grid { grid-template-columns: 1fr; }
+  .pk-grid, .style-grid { grid-template-columns: 1fr; }
   .pk.featured { transform: none; }
 }
 @media (max-width: 560px) {

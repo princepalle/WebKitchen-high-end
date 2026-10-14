@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>African Caribbean Cuisine — Bold style | WebKitchen demo</title>
+  <meta name="description" content="Bold, dark restaurant website demo by WebKitchen.">
+  <link rel="icon" href="../african-caribbean/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bold.css">
+  <script>
+    function photo(img) {
+      if (img.dataset.stock && !img.dataset.tried) { img.dataset.tried = "1"; img.src = img.dataset.stock; return; }
+      img.parentElement.classList.add("empty");
+    }
+  </script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#">African Caribbean <span>Cuisine</span></a>
+    <nav class="nav" aria-label="Main"><a class="on" href="#">Home</a><a href="#best">Best</a><a href="#menu">Menu</a><a href="#story">Story</a></nav>
+    <a class="btn sm" data-tel href="#visit">Order now</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div>
+        <h1>Experience the <span class="hl">taste</span><br>of Cameroon<br>&amp; the islands</h1>
+        <p class="lead">From ndolé and eru to jerk chicken and oxtail — bold flavors, big plates, fire on the grill. Palestine, Texas · Daily 9–8.</p>
+        <a class="btn" href="#menu">Explore the menu</a>
+        <div class="ticket">
+          <div><b>Family trays</b><span>Catering for churches, weddings &amp; parties</span></div>
+          <div class="ticket-big">Call<small>for a quote</small></div>
+        </div>
+      </div>
+      <div class="hero-bowl">
+        <div class="glow" aria-hidden="true"></div>
+        <figure class="bowl"><img src="../african-caribbean/images/dish-egusi.jpg" alt="Egusi soup with pounded yam" data-stock="https://commons.wikimedia.org/wiki/Special:FilePath/Pounded_Yam_and_Egusi_Soup.jpg?width=1000" onerror="photo(this)"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="best" id="best">
+    <div class="wrap">
+      <h2 class="bracket">Our best <span>plates</span></h2>
+      <article class="feature">
+        <figure class="feat-img"><img src="../african-caribbean/images/dish-ndole.jpg" alt="Ndolé" loading="lazy" data-stock="https://commons.wikimedia.org/wiki/Special:FilePath/Ndol%C3%A9_camerounais.JPG?width=900" onerror="photo(this)"></figure>
+        <div><h3>Ndolé</h3><p>Bitterleaf, ground peanut, beef and shrimp — the dish Cameroon is proudest of.</p><div class="price-row"><b>$18</b><a class="btn sm" data-tel href="#visit">Order</a></div></div>
+      </article>
+      <article class="feature flip">
+        <figure class="feat-img"><img src="../african-caribbean/images/dish-soya.jpg" alt="Beef soya" loading="lazy" data-stock="https://commons.wikimedia.org/wiki/Special:FilePath/Nigerian_home_made_suya_and_sliced_onions.png?width=900" onerror="photo(this)"></figure>
+        <div><h3>Beef Soya</h3><p>Thin-sliced beef, peanut-pepper spice, straight off the open flame.</p><div class="price-row"><b>$12</b><a class="btn sm" data-tel href="#visit">Order</a></div></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <h2 class="bracket">The <span>menu</span></h2>
+      <div class="grid" id="grid"></div>
+      <p class="fine">Sample prices · spice adjusted on request</p>
+    </div>
+  </section>
+
+  <section class="story" id="story">
+    <div class="wrap story-in">
+      <figure class="story-img"><img src="../african-caribbean/images/owner.jpg" alt="The owner" loading="lazy" onerror="photo(this)"></figure>
+      <div>
+        <h2 class="bracket">Meet the <span>cook</span></h2>
+        <p>A daughter of Cameroon, a pastor's wife and the heart behind Palestine's African store. Every pot she stirs carries home in it — and she cooks it for everyone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap visit-in">
+      <div><h2>Hungry yet?</h2><p>Dine in · Takeout · Call ahead · Catering · Delivery<br>Palestine, Texas · Open daily 9 AM – 8 PM</p></div>
+      <a class="btn" data-tel href="#visit">Call to order</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot"><div class="wrap">A WebKitchen style demo · <a href="../../">Back to WebKitchen</a> · Sample photos via Wikimedia Commons (CC licenses)</div></footer>
+
+<script src="../african-caribbean/menu.js"></script>
+<script>
+  const PHONE = ""; // restaurant phone turns on the order buttons
+  (() => {
+    const d = PHONE.replace(/\D/g, "").slice(-10);
+    document.querySelectorAll("[data-tel]").forEach(a => (a.href = d ? `tel:+1${d}` : "#visit"));
+    const items = (window.MENU || []).flatMap(c => c.items.slice(0, 3).map(i => ({ ...i, cat: c.label }))).slice(0, 12);
+    document.getElementById("grid").innerHTML = items.map(i => `
+      <article class="tile"><small>${i.cat}</small><h3>${i.name}</h3><p>${i.desc}</p><div class="price-row"><b>$${i.price}</b><span class="go" aria-hidden="true">→</span></div></article>`).join("");
+  })();
+</script>
+</body>
+</html>

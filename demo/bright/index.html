@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>African Caribbean Cuisine — Bright style | WebKitchen demo</title>
+  <meta name="description" content="Bright, friendly restaurant website demo by WebKitchen, with a menu and order cart.">
+  <link rel="icon" href="../african-caribbean/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bright.css">
+  <script>
+    function photo(img) {
+      if (img.dataset.stock && !img.dataset.tried) { img.dataset.tried = "1"; img.src = img.dataset.stock; return; }
+      (img.closest(".plate, .dish-img, .ci-img") || img.parentElement).classList.add("empty");
+    }
+  </script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#"><img src="../african-caribbean/logo.svg" alt="" width="40" height="40"><span>African Caribbean <b>Cuisine</b></span></a>
+    <nav class="nav" aria-label="Main"><a href="#" class="on">Home</a><a href="#popular">Popular</a><a href="#menu">Menu</a><a href="#visit">Visit</a></nav>
+    <button class="cart-btn" aria-label="Open cart" data-open-cart><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11h11l2-8H6.2"/><circle cx="9" cy="19.5" r="1.4"/><circle cx="17" cy="19.5" r="1.4"/></svg><span class="count" data-count>0</span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="hello">Welcome to</p>
+        <h1>African Caribbean Cuisine — enjoy <span class="ring">the flavor</span></h1>
+        <p class="lead">Ndolé, eru, egusi and fufu, jollof and fire-grilled soya, made fresh in Palestine, Texas. Add your favorites to the cart and call ahead — we'll have it hot and ready.</p>
+        <div class="row">
+          <a class="btn" href="#popular">Order now</a>
+          <a class="btn ghost" href="#menu">View menu</a>
+        </div>
+        <p class="open"><span class="dot"></span> Open daily · 9:00 AM – 8:00 PM</p>
+      </div>
+      <div class="hero-art">
+        <div class="ring-dash" aria-hidden="true"></div>
+        <figure class="plate big"><img src="../african-caribbean/images/dish-jollof.jpg" alt="Jollof rice with plantain" data-stock="https://commons.wikimedia.org/wiki/Special:FilePath/Jollof_rice_and_Dodo.jpg?width=900" onerror="photo(this)"></figure>
+        <span class="tag-best">Best seller 🔥</span>
+        <div class="mini-card">
+          <figure class="plate small"><img src="../african-caribbean/images/dish-soya.jpg" alt="" data-stock="https://commons.wikimedia.org/wiki/Special:FilePath/Nigerian_home_made_suya_and_sliced_onions.png?width=300" onerror="photo(this)"></figure>
+          <div><b>Beef Soya</b><span class="sub">Fire-grilled · spicy</span><span class="price">$12</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular" id="popular">
+    <div class="wrap">
+      <div class="head-row">
+        <h2>Our popular <span class="ring">dishes</span></h2>
+        <div class="arrows"><button aria-label="Previous" data-scroll="-1">‹</button><button aria-label="Next" data-scroll="1">›</button></div>
+      </div>
+      <div class="cards" id="cards"></div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <h2>Full <span class="ring">menu</span></h2>
+      <div class="chips" id="chips" role="tablist" aria-label="Categories"></div>
+      <ul class="list" id="list"></ul>
+      <p class="fine">Sample prices · spice adjusted on request</p>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap visit-in">
+      <div><h2>Come <span class="ring">visit</span></h2><p>Palestine, Texas · Open daily 9 AM – 8 PM<br>Dine in · Takeout · Call ahead · Catering · Delivery</p></div>
+      <a class="btn" data-tel href="#visit">Call to order</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot"><div class="wrap">A WebKitchen style demo · <a href="../../">Back to WebKitchen</a> · Sample photos via Wikimedia Commons (CC licenses)</div></footer>
+
+<aside class="cart" id="cart" aria-label="Your order" aria-hidden="true">
+  <div class="cart-head"><button aria-label="Close cart" data-close-cart>‹</button><b>My order</b><span></span></div>
+  <ul class="cart-items" id="cart-items"></ul>
+  <div class="cart-sum">
+    <p><span>Subtotal</span><b data-subtotal>$0</b></p>
+    <p class="fine">Taxes and delivery are confirmed when you call.</p>
+    <button class="btn wide" data-send>Send order</button>
+    <p class="fine center" data-send-note></p>
+  </div>
+</aside>
+<div class="scrim" data-close-cart hidden></div>
+
+<script src="../african-caribbean/menu.js"></script>
+<script src="bright.js"></script>
+</body>
+</html>
