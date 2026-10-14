@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="African Caribbean Cuisine">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8a33d"/><stop offset="1" stop-color="#c2410c"/>
+    </linearGradient>
+    <path id="arcTop" d="M40,120 a80,80 0 0,1 160,0"/>
+    <path id="arcBot" d="M28,120 a92,92 0 0,0 184,0"/>
+  </defs>
+  <circle cx="120" cy="120" r="116" fill="#3b1d12"/>
+  <circle cx="120" cy="120" r="104" fill="none" stroke="url(#g)" stroke-width="3"/>
+  <circle cx="120" cy="120" r="97" fill="none" stroke="#e8a33d" stroke-width="1" stroke-dasharray="2 5"/>
+  <!-- cooking pot -->
+  <g transform="translate(120 128)">
+    <path d="M-12,-46 q-6,-10 2,-18 M0,-48 q-6,-10 2,-18 M12,-46 q-6,-10 2,-18" stroke="#f6d38b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <rect x="-46" y="-34" width="92" height="9" rx="4.5" fill="#e8a33d"/>
+    <path d="M-40,-25 h80 v14 a40,32 0 0,1 -80,0 z" fill="url(#g)"/>
+    <path d="M-40,-18 h80" stroke="#3b1d12" stroke-width="3"/>
+    <path d="M-40,-18 l8,-6 l8,6 l8,-6 l8,6 l8,-6 l8,6 l8,-6 l8,6 l8,-6 l8,6" stroke="#3b1d12" stroke-width="2" fill="none"/>
+    <path d="M-52,-20 h12 M40,-20 h12" stroke="#e8a33d" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text font-family="Georgia, serif" font-size="17" font-weight="700" letter-spacing="2.5" fill="#f6d38b"><textPath href="#arcTop" startOffset="50%" text-anchor="middle">AFRICAN CARIBBEAN</textPath></text>
+  <text font-family="Georgia, serif" font-size="15" font-weight="700" letter-spacing="5" fill="#f6d38b"><textPath href="#arcBot" startOffset="50%" text-anchor="middle" dominant-baseline="hanging">CUISINE</textPath></text>
+  <circle cx="44" cy="150" r="3" fill="#16a34a"/><circle cx="196" cy="150" r="3" fill="#16a34a"/>
+</svg>
