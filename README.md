@@ -8,3 +8,6 @@ Static site, no build step. On Vercel: import the repo, framework "Other", deplo
 ## Demo photos
 Drop real photos into `demo/african-caribbean/images/` with these names to replace the sample Wikimedia Commons photos:
 `hero.jpg`, `dish-ndole.jpg`, `dish-eru.jpg`, `dish-jollof.jpg`, `dish-egusi.jpg`, `dish-soya.jpg`, `catering.jpg`, `owner.jpg`.
+
+## Run locally
+`python3 -m http.server 8000` in this folder, then open http://localhost:8000.

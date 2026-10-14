@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>The Nocturne — Fine dining after dark</title>
+  <meta name="description" content="The Nocturne is an intimate, candlelit dining room with an open-fire kitchen and a seasonal tasting menu. Reserve a table for tonight.">
+  <meta name="theme-color" content="#0b0a09">
+  <meta property="og:title" content="The Nocturne — Where the city whispers">
+  <meta property="og:description" content="An intimate, candlelit dining room with an open-fire kitchen. Reserve a table for tonight.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://commons.wikimedia.org">
+  <link rel="preconnect" href="https://upload.wikimedia.org">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nocturne.css">
+  <script>
+    /* If a photo can't load, keep the candlelit frame instead of a broken image */
+    function fallback(img) { img.closest(".media").classList.add("is-empty"); img.remove(); }
+  </script>
+  <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head" data-head>
+  <div class="shell head-row">
+    <a class="wordmark" href="#top" aria-label="The Nocturne — back to top">
+      <img src="mark.svg" alt="" width="28" height="28"><span>The Nocturne</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#story">Story</a>
+      <a href="#experience">Experience</a>
+      <a href="#menu">Menu</a>
+      <a href="#chef">Chef</a>
+      <a href="#reserve">Reservations</a>
+    </nav>
+    <a class="btn btn-amber btn-head" href="#reserve">Reserve a table</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="overlay-nav" data-menu-btn>
+      <span class="sr-only">Menu</span><i></i><i></i>
+    </button>
+  </div>
+  <nav class="overlay-nav" id="overlay-nav" aria-label="Mobile sections" hidden data-overlay>
+    <a href="#story">Story</a><a href="#experience">Experience</a><a href="#menu">Menu</a><a href="#chef">Chef</a><a href="#reserve">Reservations</a>
+    <p class="overlay-meta">Tue – Sun · 5:30 PM – Midnight</p>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- 1. HERO -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <figure class="media hero-media" aria-hidden="true">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Candlelight_dinner_-_Flickr_-_Robert_Couse-Baker.jpg?width=1600"
+           srcset="https://commons.wikimedia.org/wiki/Special:FilePath/Candlelight_dinner_-_Flickr_-_Robert_Couse-Baker.jpg?width=900 900w,
+                   https://commons.wikimedia.org/wiki/Special:FilePath/Candlelight_dinner_-_Flickr_-_Robert_Couse-Baker.jpg?width=1600 1600w,
+                   https://commons.wikimedia.org/wiki/Special:FilePath/Candlelight_dinner_-_Flickr_-_Robert_Couse-Baker.jpg?width=2400 2400w"
+           sizes="100vw" alt="" fetchpriority="high" decoding="async" onerror="fallback(this)">
+    </figure>
+    <div class="hero-flame" aria-hidden="true"></div>
+    <div class="shell hero-body">
+      <p class="label" data-rise>Fine dining after dark · Est. 2026</p>
+      <h1 id="hero-title" class="hero-title">
+        <span class="line" data-rise>Where the city</span>
+        <span class="line" data-rise><em>whispers.</em></span>
+      </h1>
+      <div class="hero-foot" data-rise>
+        <p class="hero-lead">A candlelit room, an open-fire kitchen and a tasting menu that changes with the season. Forty-two seats. One long, unhurried evening.</p>
+        <div class="cta-row">
+          <a class="btn btn-amber" href="#reserve">Reserve a table</a>
+          <a class="btn btn-ghost" href="#menu">Tonight's menu</a>
+        </div>
+      </div>
+    </div>
+    <ul class="hero-meta shell">
+      <li><span>Hours</span>Tue – Sun · 5:30 PM – Midnight</li>
+      <li><span>Tonight</span>Seatings from 5:30 PM</li>
+      <li><span>Dress</span>Evening smart</li>
+    </ul>
+  </section>
+
+  <!-- 2. STORY -->
+  <section class="story section" id="story" aria-labelledby="story-title">
+    <div class="shell">
+      <p class="label reveal">Our story</p>
+      <h2 id="story-title" class="giant reveal">The <em>Nocturne</em></h2>
+      <div class="story-grid">
+        <p class="story-lede reveal">Named for the music written for the night, The Nocturne is a modern take on dining after dark — slower, quieter, and lit by flame.</p>
+        <div class="story-copy reveal">
+          <p>We built the room around the hours most restaurants rush through. Low light, deep chairs, and a kitchen that cooks over wood and ember, so every plate carries a little smoke and a little warmth.</p>
+          <p>The menu is short and seasonal. Ingredients come from growers we know by name. Nothing is hurried — not the bread, not the sauces, and certainly not you.</p>
+        </div>
+      </div>
+      <ul class="facts reveal">
+        <li><strong>42</strong><span>Seats in the main room</span></li>
+        <li><strong>7</strong><span>Courses in the tasting menu</span></li>
+        <li><strong>11:00</strong><span>Last seating, every night</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3. EXPERIENCE -->
+  <section class="experience section" id="experience" aria-labelledby="exp-title">
+    <div class="shell">
+      <div class="sec-head">
+        <p class="label reveal">The experience</p>
+        <h2 id="exp-title" class="h2 reveal">Three rooms,<br><em>one long evening</em></h2>
+      </div>
+
+      <article class="room reveal">
+        <figure class="media room-media">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Restaurant_Candles_at_Miriam_(24836828121).jpg?width=1400"
+               srcset="https://commons.wikimedia.org/wiki/Special:FilePath/Restaurant_Candles_at_Miriam_(24836828121).jpg?width=800 800w,
+                       https://commons.wikimedia.org/wiki/Special:FilePath/Restaurant_Candles_at_Miriam_(24836828121).jpg?width=1400 1400w"
+               sizes="(min-width: 900px) 60vw, 100vw" alt="Candles glowing on tables in a dim dining room" loading="lazy" decoding="async" onerror="fallback(this)">
+        </figure>
+        <div class="room-copy">
+          <span class="room-no">I</span>
+          <h3>The Ember Room</h3>
+          <p>Our main dining room. Candlelight, dark oak and the soft crackle of the hearth. Built for conversations that last until the last pour.</p>
+          <p class="room-note">Up to 42 guests · Tasting menu &amp; à la carte</p>
+        </div>
+      </article>
+
+      <article class="room flip reveal">
+        <figure class="media room-media">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kitchen_at_El_Bulli_(4580371583).jpg?width=1400"
+               srcset="https://commons.wikimedia.org/wiki/Special:FilePath/Kitchen_at_El_Bulli_(4580371583).jpg?width=800 800w,
+                       https://commons.wikimedia.org/wiki/Special:FilePath/Kitchen_at_El_Bulli_(4580371583).jpg?width=1400 1400w"
+               sizes="(min-width: 900px) 60vw, 100vw" alt="Chefs at work in an open kitchen" loading="lazy" decoding="async" onerror="fallback(this)">
+        </figure>
+        <div class="room-copy">
+          <span class="room-no">II</span>
+          <h3>The Chef's Counter</h3>
+          <p>Eight seats facing the fire. Watch every course leave the pass, and taste the dishes that never make the printed menu.</p>
+          <p class="room-note">8 guests · Two seatings nightly</p>
+        </div>
+      </article>
+
+      <article class="room reveal">
+        <figure class="media room-media">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Paris_-_A_waiter_lighting_candles_in_a_bar_-_3418.jpg?width=1400"
+               srcset="https://commons.wikimedia.org/wiki/Special:FilePath/Paris_-_A_waiter_lighting_candles_in_a_bar_-_3418.jpg?width=800 800w,
+                       https://commons.wikimedia.org/wiki/Special:FilePath/Paris_-_A_waiter_lighting_candles_in_a_bar_-_3418.jpg?width=1400 1400w"
+               sizes="(min-width: 900px) 60vw, 100vw" alt="A host lighting candles in the bar before service" loading="lazy" decoding="async" onerror="fallback(this)">
+        </figure>
+        <div class="room-copy">
+          <span class="room-no">III</span>
+          <h3>The Late Bar</h3>
+          <p>After dinner, or instead of it. Small plates, low music and a list of rare pours served until midnight.</p>
+          <p class="room-note">Walk-ins welcome · No reservation needed</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 4. MENU / TONIGHT'S SPECIAL -->
+  <section class="menu section" id="menu" aria-labelledby="menu-title">
+    <div class="shell">
+      <div class="special reveal">
+        <div class="light-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="special-copy">
+          <p class="label">Tonight's special</p>
+          <h2 id="menu-title" class="h2">Ember-roasted <em>duck</em></h2>
+          <p>Dry-aged for fourteen days, finished over cherry wood, with charred plum, smoked beet and a glass-dark jus.</p>
+          <p class="price-line"><span>Served from 7 PM</span><strong>$58</strong></p>
+          <a class="btn btn-amber" href="#reserve">Reserve to taste it</a>
+        </div>
+        <figure class="media special-plate">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Haute_Cuisine.jpg?width=1000"
+               srcset="https://commons.wikimedia.org/wiki/Special:FilePath/Haute_Cuisine.jpg?width=600 600w,
+                       https://commons.wikimedia.org/wiki/Special:FilePath/Haute_Cuisine.jpg?width=1000 1000w"
+               sizes="(min-width: 900px) 40vw, 80vw" alt="A finely plated dish" loading="lazy" decoding="async" onerror="fallback(this)">
+        </figure>
+      </div>
+
+      <div class="menu-grid">
+        <div class="tasting reveal">
+          <p class="label">The tasting menu</p>
+          <h3 class="h3">Seven courses <em>by firelight</em></h3>
+          <ol class="courses">
+            <li><span>I</span><div><b>Oyster, smoked butter</b><small>cucumber, dill ash</small></div></li>
+            <li><span>II</span><div><b>Hearth bread</b><small>cultured cream, sea salt</small></div></li>
+            <li><span>III</span><div><b>Charred leek</b><small>hazelnut, brown butter</small></div></li>
+            <li><span>IV</span><div><b>Scallop</b><small>burnt orange, fennel</small></div></li>
+            <li><span>V</span><div><b>Ember-roasted duck</b><small>plum, smoked beet</small></div></li>
+            <li><span>VI</span><div><b>Aged cheese</b><small>honeycomb, rye</small></div></li>
+            <li><span>VII</span><div><b>Dark chocolate</b><small>coffee, salted caramel</small></div></li>
+          </ol>
+          <p class="price-line"><span>Per guest · wine pairing available</span><strong>$145</strong></p>
+        </div>
+
+        <div class="signatures reveal">
+          <p class="label">Signature dishes</p>
+          <ul class="dishes">
+            <li><div><b>Wood-fired turbot</b><small>beurre blanc, charred lemon</small></div><span>$46</span></li>
+            <li><div><b>Short rib, 48 hours</b><small>black garlic, pomme purée</small></div><span>$52</span></li>
+            <li><div><b>Wild mushroom risotto</b><small>aged parmesan, truffle</small></div><span>$34</span></li>
+            <li><div><b>Beef tartare</b><small>smoked yolk, crisp shallot</small></div><span>$24</span></li>
+            <li><div><b>Burnt honey tart</b><small>crème fraîche, thyme</small></div><span>$16</span></li>
+          </ul>
+          <figure class="media dessert">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cocada_on_black_background_20072011.jpg?width=900"
+                 srcset="https://commons.wikimedia.org/wiki/Special:FilePath/Cocada_on_black_background_20072011.jpg?width=600 600w,
+                         https://commons.wikimedia.org/wiki/Special:FilePath/Cocada_on_black_background_20072011.jpg?width=900 900w"
+                 sizes="(min-width: 900px) 40vw, 100vw" alt="A dessert on a dark plate" loading="lazy" decoding="async" onerror="fallback(this)">
+          </figure>
+        </div>
+      </div>
+      <p class="fine">Menus change with the season. Please tell us about allergies when you book.</p>
+    </div>
+  </section>
+
+  <!-- 5. CHEF -->
+  <section class="chef section" id="chef" aria-labelledby="chef-title">
+    <div class="shell chef-grid">
+      <figure class="media chef-media reveal">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Agglomeration_of_melted_candle_wax,_plus_burning_candles,_in_a_Tallinn_restaurant.jpg?width=900"
+             alt="Candles burning low on the chef's table" loading="lazy" decoding="async" onerror="fallback(this)">
+        <figcaption>The chef's table, after the last seating</figcaption>
+      </figure>
+      <div class="chef-copy">
+        <p class="label reveal">The chef</p>
+        <h2 id="chef-title" class="h2 reveal">Elena Marlow,<br><em>keeper of the fire</em></h2>
+        <blockquote class="pull reveal"><p>“Fire forces you to slow down. You can't rush an ember — so we don't rush anything.”</p></blockquote>
+        <div class="reveal">
+          <p>Elena trained in the wood-fired kitchens of northern Spain and southern France before coming home to build a room of her own. Her cooking is simple on the plate and patient behind it: long braises, live-fire roasting, and sauces that start the day before.</p>
+          <p>At The Nocturne she cooks the way she likes to eat — late, by candlelight, with people worth staying up for.</p>
+        </div>
+        <dl class="chef-facts reveal">
+          <div><dt>Cooks with</dt><dd>Oak, cherry &amp; ember</dd></div>
+          <div><dt>Signature</dt><dd>Ember-roasted duck</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="interlude" aria-label="Night is ours">
+    <p class="interlude-text reveal"><span>Night</span> <em>is</em> <span>ours.</span></p>
+  </section>
+
+  <!-- 6. RESERVATIONS -->
+  <section class="reserve section" id="reserve" aria-labelledby="reserve-title">
+    <div class="shell reserve-grid">
+      <div class="reserve-info">
+        <p class="label reveal">Reservations</p>
+        <h2 id="reserve-title" class="h2 reveal">Your table<br><em>is waiting</em></h2>
+        <p class="reveal">Book up to sixty days ahead. For parties larger than eight, private dining or the Chef's Counter, please call us.</p>
+        <dl class="contact reveal">
+          <div><dt>Hours</dt><dd>Tuesday – Sunday<br>5:30 PM – Midnight</dd></div>
+          <div><dt>Address</dt><dd data-address></dd></div>
+          <div><dt>Phone</dt><dd><a data-phone href="#reserve">Phone coming soon</a></dd></div>
+          <div><dt>Email</dt><dd><a data-email href="#reserve">Email coming soon</a></dd></div>
+        </dl>
+      </div>
+
+      <form class="booking reveal" id="booking" novalidate aria-describedby="booking-note">
+        <div class="booking-fields">
+          <p class="booking-title">Reserve a table</p>
+          <div class="field-row">
+            <div class="field">
+              <label for="b-date">Date</label>
+              <input id="b-date" name="date" type="date" required aria-describedby="b-date-err">
+              <p class="err" id="b-date-err"></p>
+            </div>
+            <div class="field">
+              <label for="b-time">Time</label>
+              <select id="b-time" name="time" required aria-describedby="b-time-err"><option value="">Choose</option></select>
+              <p class="err" id="b-time-err"></p>
+            </div>
+          </div>
+          <fieldset class="field party">
+            <legend>Guests</legend>
+            <div class="party-opts" data-party></div>
+          </fieldset>
+          <div class="field-row">
+            <div class="field">
+              <label for="b-name">Full name</label>
+              <input id="b-name" name="name" type="text" autocomplete="name" required aria-describedby="b-name-err">
+              <p class="err" id="b-name-err"></p>
+            </div>
+            <div class="field">
+              <label for="b-phone">Phone</label>
+              <input id="b-phone" name="phone" type="tel" autocomplete="tel" required aria-describedby="b-phone-err">
+              <p class="err" id="b-phone-err"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="b-email">Email</label>
+            <input id="b-email" name="email" type="email" autocomplete="email" required aria-describedby="b-email-err">
+            <p class="err" id="b-email-err"></p>
+          </div>
+          <div class="field">
+            <label for="b-notes">Occasion or requests <span class="opt">(optional)</span></label>
+            <textarea id="b-notes" name="notes" rows="2" placeholder="Anniversary, allergies, a quiet corner…"></textarea>
+          </div>
+          <button class="btn btn-amber btn-wide" type="submit">Request reservation</button>
+          <p class="fine" id="booking-note">We confirm every request personally, usually within the hour.</p>
+        </div>
+        <div class="booking-done" hidden tabindex="-1" data-done>
+          <p class="label">Request received</p>
+          <p class="done-title">Thank you, <span data-done-name></span>.</p>
+          <p data-done-summary></p>
+          <p class="fine" data-done-note></p>
+          <button class="btn btn-ghost" type="button" data-again>Make another request</button>
+        </div>
+        <p class="sr-only" aria-live="polite" data-live></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="shell foot-row">
+    <a class="wordmark" href="#top"><img src="mark.svg" alt="" width="24" height="24"><span>The Nocturne</span></a>
+    <p>Fine dining after dark · Tue – Sun, 5:30 PM – Midnight</p>
+    <p class="credits">A WebKitchen concept site. Sample photos from Wikimedia Commons (CC licenses):
+      <a href="https://commons.wikimedia.org/wiki/File:Candlelight_dinner_-_Flickr_-_Robert_Couse-Baker.jpg">Robert Couse-Baker</a>,
+      <a href="https://commons.wikimedia.org/wiki/File:Restaurant_Candles_at_Miriam_(24836828121).jpg">Candles at Miriam</a>,
+      <a href="https://commons.wikimedia.org/wiki/File:Kitchen_at_El_Bulli_(4580371583).jpg">Kitchen at El Bulli</a>,
+      <a href="https://commons.wikimedia.org/wiki/File:Paris_-_A_waiter_lighting_candles_in_a_bar_-_3418.jpg">Paris candles</a>,
+      <a href="https://commons.wikimedia.org/wiki/File:Haute_Cuisine.jpg">Haute Cuisine</a>,
+      <a href="https://commons.wikimedia.org/wiki/File:Cocada_on_black_background_20072011.jpg">Cocada</a>,
+      <a href="https://commons.wikimedia.org/wiki/File:Agglomeration_of_melted_candle_wax,_plus_burning_candles,_in_a_Tallinn_restaurant.jpg">Tallinn candles</a>.
+      · <a href="../../">Back to WebKitchen</a></p>
+  </div>
+</footer>
+
+<a class="dock" href="#reserve" data-dock>Reserve a table</a>
+
+<script src="nocturne.js" defer></script>
+</body>
+</html>
